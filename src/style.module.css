@@ -1,0 +1,67 @@
+  * {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ContorllerTextBox {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  padding: 20px;
+  }
+  .ContorllerTextBox:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  
+  @media screen and (min-width: 430px) {
+    .ContorllerTextBox {
+      flex-direction: column;
+      width: 100%;
+
+        }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .ContorllerTextBox {
+      flex-direction: column; 
+      width: 50%;
+    }
+      .column {
+    width: 50%;
+  }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .ContorllerTextBox {
+      flex-direction: column;
+      width: 100%;
+
+    
+    
+    }
+    .ContorllerButton{
+
+      flex-direction: column;
+
+    }
+  
+    .column {
+    width: 100%;
+  }
+  }
